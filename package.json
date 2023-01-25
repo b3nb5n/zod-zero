@@ -1,0 +1,26 @@
+{
+	"name": "zod-zero",
+	"version": "0.1.1",
+	"description": "generate zero values from zod schemas",
+	"repository": "https://github.com/benbaldwin000/zod-zero.git",
+	"license": "MIT",
+	"packageManager": "yarn@3.3.1",
+	"main": "./build/index.js",
+	"module": "./build/index.mjs",
+	"types": "./build/index.d.ts",
+	"scripts": {
+		"dev": "tsup src/index.ts --outDir build --format esm --sourcemap --watch",
+		"build": "tsc && tsup src/index.ts --outDir build --format esm,cjs --sourcemap"
+	},
+	"devDependencies": {
+		"tsup": "^6.5.0",
+		"zod": "^3.20.2"
+	},
+	"files": [
+		"./build",
+		"./src",
+		"LICENSE",
+		"package.json",
+		"tsconfig.json"
+	]
+}
