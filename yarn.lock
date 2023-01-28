@@ -1805,6 +1805,8 @@ __metadata:
   dependencies:
     tsup: ^6.5.0
     zod: ^3.20.2
+  peerDependencies:
+    zod: "*"
   languageName: unknown
   linkType: soft
 

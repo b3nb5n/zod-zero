@@ -12,6 +12,9 @@
 		"dev": "tsup src/index.ts --outDir build --format esm --sourcemap --watch",
 		"build": "tsc && tsup src/index.ts --outDir build --format esm,cjs --sourcemap"
 	},
+	"peerDependencies": {
+		"zod": "3.*"
+	},
 	"devDependencies": {
 		"tsup": "^6.5.0",
 		"zod": "^3.20.2"
